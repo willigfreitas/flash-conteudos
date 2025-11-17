@@ -18,6 +18,24 @@
     .gallery img { width:100%; border-radius:10px; margin-bottom:15px; }
     video { width:100%; border-radius:10px; margin:20px 0; }
     footer { background:#111; color:#ccc; text-align:center; padding:20px; margin-top:40px; font-size:14px; }
+    
+    /* Melhorias adicionadas */
+    .video-placeholder { 
+      background: #f0f0f0; 
+      padding: 60px 20px; 
+      border-radius: 10px; 
+      margin: 20px 0; 
+      text-align: center; 
+      color: #666; 
+    }
+    .ad-space { 
+      background: #e9e9e9; 
+      padding: 30px; 
+      text-align: center; 
+      margin: 20px 0; 
+      border-radius: 8px; 
+      color: #555; 
+    }
   </style>
 </head>
 <body>
@@ -36,54 +54,79 @@
   <h2>Jogue no Best Play e ganhe pequenas recompensas</h2>
   <p>Uma plataforma de jogos divertida, prática e cheia de objetivos para completar.</p>
 
-  <!-- Espaço para um vídeo curto do app -->
-  <video autoplay muted loop playsinline>
-    <source src="videos/demo.mp4" type="video/mp4" />
-  </video>
+  <!-- Placeholder para vídeo -->
+  <div class="video-placeholder">
+    <p>📱 <strong>Vídeo demonstrativo do App</strong></p>
+    <p>Demo interativa do Best Play em ação</p>
+  </div>
 
-  <a class="btn" href="#">Baixar App</a>
+  <a class="btn" href="#" onclick="alert('Link de download em breve!')">Baixar App</a>
 
   <!-- Espaço para anúncio -->
-  <div style="margin-top:30px;">[AdSense ou outro anúncio aqui]</div>
+  <div class="ad-space">
+    <p>📢 <strong>Espaço para Publicidade</strong></p>
+    <p>Anúncio relevante para seu público aqui</p>
+  </div>
 </div>
 
 <section id="como-funciona">
   <h3>Como funciona</h3>
-  <p>1. Baixe o app Best Play no seu celular.</p>
-  <p>2. Escolha um dos jogos disponíveis e comece a cumprir objetivos.</p>
-  <p>3. Ao completar metas, você recebe pequenas recompensas dentro da plataforma.</p>
+  <p>1. 📥 <strong>Baixe o app</strong> Best Play no seu celular</p>
+  <p>2. 🎮 <strong>Escolha um jogo</strong> e comece a cumprir objetivos</p>
+  <p>3. 🏆 <strong>Complete metas</strong> e receba recompensas</p>
 
-  <img src="img/print1.jpg" alt="print" />
+  <div class="video-placeholder">
+    <p>🔄 <strong>Tutorial em Vídeo</strong></p>
+    <p>Veja como funciona na prática</p>
+  </div>
 
-  <video autoplay muted loop playsinline>
-    <source src="videos/tutorial1.mp4" type="video/mp4" />
-  </video>
-
-  <!-- Anúncio opcional -->
-  <div>[Espaço para anúncio]</div>
+  <div class="ad-space">
+    <p>💼 <strong>Parceria</strong></p>
+    <p>Anúncio patrocinado</p>
+  </div>
 </section>
 
 <section id="galeria">
   <h3>Galeria</h3>
   <div class="gallery">
-    <img src="img/print2.jpg" />
-    <img src="img/print3.jpg" />
-    <img src="img/print4.jpg" />
+    <div class="video-placeholder" style="height: 200px;">
+      <p>📸 Print 1 - Interface do App</p>
+    </div>
+    <div class="video-placeholder" style="height: 200px;">
+      <p>📸 Print 2 - Jogos Disponíveis</p>
+    </div>
+    <div class="video-placeholder" style="height: 200px;">
+      <p>📸 Print 3 - Sistema de Recompensas</p>
+    </div>
   </div>
 </section>
 
 <section id="faq">
   <h3>Perguntas frequentes</h3>
-  <p><strong>O Best Play realmente dá recompensas?</strong><br> Sim, conforme você completa objetivos dentro dos jogos.</p>
-
-  <p><strong>Preciso pagar algo?</strong><br> Não. O app é gratuito.</p>
-
-  <p><strong>Posso sacar dinheiro?</strong><br> Depende dos requisitos da plataforma e das regras ativas. O site serve apenas para informar, o app lista as opções disponíveis.</p>
+  
+  <div style="margin-bottom: 20px;">
+    <strong>🎯 O Best Play realmente dá recompensas?</strong>
+    <p>Sim! Conforme você completa objetivos dentro dos jogos, acumula recompensas.</p>
+  </div>
+  
+  <div style="margin-bottom: 20px;">
+    <strong>💳 Preciso pagar algo?</strong>
+    <p>Não. O app é 100% gratuito para baixar e jogar.</p>
+  </div>
+  
+  <div style="margin-bottom: 20px;">
+    <strong>💰 Posso sacar dinheiro?</strong>
+    <p>Depende dos requisitos da plataforma. O app lista todas as opções disponíveis no momento.</p>
+  </div>
 </section>
 
 <footer>
-  © 2025 Best Play — Todos os direitos reservados<br>
-  Política de Privacidade | Termos de Uso | Contato
+  <p>© 2025 Best Play — Todos os direitos reservados</p>
+  <p>
+    <a href="#" style="color: #ccc; margin: 0 10px;">Política de Privacidade</a> | 
+    <a href="#" style="color: #ccc; margin: 0 10px;">Termos de Uso</a> | 
+    <a href="#" style="color: #ccc; margin: 0 10px;">Contato</a>
+  </p>
 </footer>
 
 </body>
