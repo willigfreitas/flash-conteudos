@@ -1,1 +1,1 @@
-Prévia do site, esquelo, etc..
+Prévia do site, esqueleto, etc..
